@@ -1,1 +1,4 @@
 rootProject.name = 'CleanArchitecture-sample'
+
+include ':Deposit-Controller'
+project(':Deposit-Controller').projectDir = new File('Service/Deposit/Deposit-Controller')
