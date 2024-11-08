@@ -26,7 +26,19 @@ dependencies {
 }
 
 bootJar {
-    mainClass = 'com.sample.depositcontroller.DepositControllerApplication'  // メインクラスの完全修飾名に変更
+    mainClass = 'com.sample.depositcontroller.DepositControllerApplication'
+}
+
+//tasks.named('bootRun') {
+//    mainClass = 'com.sample.depositcontroller.DepositControllerApplication'
+//}
+
+springBoot {
+//    com.sample.cleanarchitecture.service.deposit.depositcontroller
+    // FIXME: Gradle:bootRunをダブルクリックでのブートが失敗する
+    //       構成が毎回増えるので指定しているが、個の指定が上手くいかない
+//    mainClass = 'com.sample.depositcontroller.DepositControllerApplication'
+    mainClass = 'com.sample.cleanarchitecture.service.deposit.DepositController'
 }
 
 tasks.named('test') {
