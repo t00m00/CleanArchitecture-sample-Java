@@ -1,10 +1,10 @@
-package com.sample.casample_controller;
+package com.sample.depositcontroller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApplicationTests {
+class DepositControllerApplicationTests {
 
 	@Test
 	void contextLoads() {
