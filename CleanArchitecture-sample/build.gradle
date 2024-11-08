@@ -4,6 +4,8 @@ plugins {
     id 'io.spring.dependency-management' version '1.1.6'
 }
 
+project.plugins.apply 'java'
+
 group = 'com.sample'
 version = '0.0.1-SNAPSHOT'
 
@@ -21,6 +23,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+bootJar {
+    mainClass = 'com.sample.depositcontroller.DepositControllerApplication'  // メインクラスの完全修飾名に変更
 }
 
 tasks.named('test') {
