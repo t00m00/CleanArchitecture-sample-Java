@@ -1,0 +1,13 @@
+@host=http://localhost:8080
+@version=v1
+@description=Deposit-Endpoints
+@baseurl={{host}}/v1
+
+###
+# @name deposit
+POST {{baseurl}}/deposit
+Content-Type: application/json
+
+{
+  "amount": "10"
+}
