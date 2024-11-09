@@ -8,6 +8,6 @@ import com.sample.shared.sharedcontract.interfaces.ResponseObserver;
 /**
  * gRPC の場合のサンプル
  */
-public interface DepositRequestStreamHandler extends RequestStreamHandler<DepositCommand, DepositResponseDto> {
+public interface DepositCommandStreamHandler extends RequestStreamHandler<DepositCommand, DepositResponseDto> {
     public void handle(DepositCommand request, ResponseObserver<DepositResponseDto> responseObserver);
 }

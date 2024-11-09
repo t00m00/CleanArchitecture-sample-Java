@@ -3,4 +3,6 @@ include 'Shared:Shared-Contracts'
 findProject(':Shared:Shared-Contracts')?.name = 'Shared-Contracts'
 include 'Service:Deposit:Deposit-Application'
 findProject(':Service:Deposit:Deposit-Application')?.name = 'Deposit-Application'
+include 'Service:Deposit:Deposit-Infrastructure'
+findProject(':Service:Deposit:Deposit-Infrastructure')?.name = 'Deposit-Infrastructure'
 

@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.sample.deposit.depositinfrastructure'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation project(':Shared:Shared-Contracts')
+    implementation project(':Service:Deposit:Deposit-Application')
+}
+
+test {
+    useJUnitPlatform()
+}
