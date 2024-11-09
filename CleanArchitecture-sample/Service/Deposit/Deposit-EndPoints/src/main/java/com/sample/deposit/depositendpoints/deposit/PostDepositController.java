@@ -1,5 +1,7 @@
 package com.sample.deposit.depositendpoints.deposit;
 
+import com.sample.deposit.depositapplication.deposit.commands.DepositCommand;
+import com.sample.deposit.depositapplication.deposit.interfaces.DepositCommandHandler;
 import com.sample.deposit.depositendpoints.deposit.dtos.PostDepositResponseDto;
 import com.sample.deposit.depositendpoints.deposit.dtos.PostDepositRequestDto;
 import lombok.RequiredArgsConstructor;
@@ -18,13 +20,13 @@ import java.math.BigDecimal;
 @RequestMapping("/v1/deposit")
 public class PostDepositController {
     private static final Logger log = LoggerFactory.getLogger(PostDepositController.class);
-//    private final DepositCommandHandler depositCommandHandler;
+    private final DepositCommandHandler depositCommandHandler;
 
     @PostMapping
     public PostDepositResponseDto deposit(@RequestBody PostDepositRequestDto request) {
         log.info("✅✅✅Deposit successful. {}", request);
 
-//        var result = depositCommandHandler.handle(new DepositCommand());
+        var result = depositCommandHandler.handle(new DepositCommand());
 
         return new PostDepositResponseDto(new BigDecimal(1_000_000));
     }
