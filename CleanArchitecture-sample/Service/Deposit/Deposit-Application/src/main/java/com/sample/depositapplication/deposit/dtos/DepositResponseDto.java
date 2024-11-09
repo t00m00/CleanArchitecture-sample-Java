@@ -1,4 +1,4 @@
 package com.sample.depositapplication.deposit.dtos;
 
-public class DepositResponseDto {
+public final class DepositResponseDto {
 }

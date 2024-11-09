@@ -1,4 +1,4 @@
 package com.sample.depositapplication.deposit.commands;
 
-public class DepositCommand {
+public final class DepositCommand {
 }
