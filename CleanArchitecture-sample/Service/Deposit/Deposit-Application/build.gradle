@@ -35,7 +35,7 @@ dependencies {
 	testImplementation 'org.springframework.modulith:spring-modulith-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
-	implementation project(':Shared')
+	implementation project(':Shared-Contracts')
 }
 
 dependencyManagement {

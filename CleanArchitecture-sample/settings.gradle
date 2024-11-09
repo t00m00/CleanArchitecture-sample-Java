@@ -1,7 +1,7 @@
 rootProject.name = 'CleanArchitecture-sample'
 
-include ':Shared'
-project(':Shared').projectDir = new File('Shared')
+include ':Shared-Contracts'
+project(':Shared-Contracts').projectDir = new File('Shared/Shared-Contracts')
 include ':Deposit-Application'
 project(':Deposit-Application').projectDir = new File('Service/Deposit/Deposit-Application')
 include ':Deposit-Domain'
