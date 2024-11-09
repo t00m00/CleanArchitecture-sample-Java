@@ -1,4 +1,6 @@
 package com.sample.depositapplication.deposit.commands;
 
-public final class DepositCommand {
+import com.sample.shared.interfaces.Request;
+
+public final class DepositCommand implements Request {
 }
