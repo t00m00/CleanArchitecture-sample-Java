@@ -6,7 +6,7 @@ include ':Deposit-Application'
 project(':Deposit-Application').projectDir = new File('Service/Deposit/Deposit-Application')
 include ':Deposit-Domain'
 project(':Deposit-Domain').projectDir = new File('Service/Deposit/Deposit-Domain')
-include ':Deposit-Controller'
-project(':Deposit-Controller').projectDir = new File('Service/Deposit/Deposit-Controller')
+include ':Deposit-EndPoints'
+project(':Deposit-EndPoints').projectDir = new File('Service/Deposit/Deposit-EndPoints')
 include ':Deposit-Infrastructure'
 project(':Deposit-Infrastructure').projectDir = new File('Service/Deposit/Deposit-Infrastructure')

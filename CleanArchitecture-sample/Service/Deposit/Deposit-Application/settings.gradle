@@ -1,1 +1,4 @@
 rootProject.name = 'Deposit-Application'
+
+include ':Shared-Contracts'
+project(':Shared-Contracts').projectDir = new File('Shared/Shared-Contracts')

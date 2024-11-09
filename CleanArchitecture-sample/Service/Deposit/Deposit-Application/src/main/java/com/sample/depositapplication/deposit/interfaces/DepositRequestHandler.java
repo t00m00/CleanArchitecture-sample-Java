@@ -5,7 +5,7 @@ import com.sample.depositapplication.deposit.dtos.DepositResponseDto;
 import com.sample.shared.interfaces.RequestHandler;
 
 /**
- * RESTful API の場合のサンプル
+ * REST API の場合のサンプル
  */
 public interface DepositRequestHandler extends RequestHandler<DepositCommand, DepositResponseDto> {
     public DepositResponseDto handle(DepositCommand command);

@@ -38,7 +38,7 @@ springBoot {
     // FIXME: Gradle:bootRunをダブルクリックでのブートが失敗する
     //       構成が毎回増えるので指定しているが、個の指定が上手くいかない
 //    mainClass = 'com.sample.depositcontroller.DepositControllerApplication'
-    mainClass = 'com.sample.cleanarchitecture.service.deposit.DepositController'
+    mainClass = 'com.sample.service.deposit.DepositEndPointsApplication'
 }
 
 tasks.named('test') {
