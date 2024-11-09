@@ -2,10 +2,7 @@ package com.sample.depositapplication.deposit.interfaces;
 
 import com.sample.depositapplication.deposit.commands.DepositCommand;
 import com.sample.depositapplication.deposit.dtos.DepositResponseDto;
-
-public interface RequestHandler<TRequest, TResponse> {
-    public TResponse handle(TRequest request);
-}
+import com.sample.shared.interfaces.RequestHandler;
 
 /**
  * RESTful API の場合のサンプル
