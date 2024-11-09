@@ -1,46 +1,50 @@
 plugins {
-    id 'java'
-    id 'org.springframework.boot' version '3.3.5'
-    id 'io.spring.dependency-management' version '1.1.6'
+	id 'java'
+	id 'org.springframework.boot' version '3.3.5'
+	id 'io.spring.dependency-management' version '1.1.6'
 }
-
-project.plugins.apply 'java'
 
 group = 'com.sample'
 version = '0.0.1-SNAPSHOT'
 
 java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
 }
 
 repositories {
-    mavenCentral()
+	mavenCentral()
+}
+
+ext {
+	set('springModulithVersion', "1.2.4")
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-web-services'
+	implementation 'org.springframework.modulith:spring-modulith-starter-core'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.modulith:spring-modulith-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
-bootJar {
-    mainClass = 'com.sample.depositcontroller.DepositControllerApplication'
-}
-
-//tasks.named('bootRun') {
-//    mainClass = 'com.sample.depositcontroller.DepositControllerApplication'
-//}
-
-springBoot {
-//    com.sample.cleanarchitecture.service.deposit.depositcontroller
-    // FIXME: Gradle:bootRunをダブルクリックでのブートが失敗する
-    //       構成が毎回増えるので指定しているが、個の指定が上手くいかない
-//    mainClass = 'com.sample.depositcontroller.DepositControllerApplication'
-    mainClass = 'com.sample.service.deposit.DepositEndPointsApplication'
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.modulith:spring-modulith-bom:${springModulithVersion}"
+	}
 }
 
 tasks.named('test') {
-    useJUnitPlatform()
+	useJUnitPlatform()
 }

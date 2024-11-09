@@ -1,31 +1,19 @@
 plugins {
-    id 'java-library'
-    id 'io.spring.dependency-management' version '1.1.6'
+    id 'java'
 }
 
 group = 'com.sample'
 version = '0.0.1-SNAPSHOT'
 
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
-}
-
 repositories {
     mavenCentral()
 }
 
-ext {
-    set('springModulithVersion', "1.2.4")
-}
-
 dependencies {
-    implementation 'org.springframework.modulith:spring-modulith-starter-core'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.modulith:spring-modulith-bom:${springModulithVersion}"
-    }
+test {
+    useJUnitPlatform()
 }
