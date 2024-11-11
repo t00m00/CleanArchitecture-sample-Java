@@ -6,7 +6,7 @@ import com.sample.shared.sharedcontract.interfaces.RequestStreamHandler;
 import com.sample.shared.sharedcontract.interfaces.ResponseObserver;
 
 /**
- * gRPC の場合のサンプル
+ * gRPC の場合のサンプル（仮）
  */
 public interface CashDepositCommandStreamHandler extends RequestStreamHandler<CashDepositCommand, CashDepositResponseDto> {
     public void handle(CashDepositCommand request, ResponseObserver<CashDepositResponseDto> responseObserver);

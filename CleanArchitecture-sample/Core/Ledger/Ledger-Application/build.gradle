@@ -12,6 +12,9 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'jakarta.validation:jakarta.validation-api:3.1.0'
+
+    implementation project(':Shared:Shared-Contracts')
 }
 
 test {
