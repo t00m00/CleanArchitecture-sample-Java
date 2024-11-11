@@ -17,17 +17,17 @@ import java.math.BigDecimal;
 
 @RestController
 @RequiredArgsConstructor(onConstructor_ = @Autowired)
-@RequestMapping("/v1/deposit")
+@RequestMapping("/v1/ledger-deposit")
 public class PostCashDepositController {
     private static final Logger log = LoggerFactory.getLogger(PostCashDepositController.class);
 //    private final CashDepositCommandHandler cashDepositCommandHandler;
 
     @PostMapping
     public PostCashDepositResponseDto deposit(@RequestBody PostCashDepositRequestDto request) {
-        log.info("✅✅✅Deposit successful. {}", request);
+        log.info("🐧Successful. Ledger cash deposit. {}", request);
 
 //        var result = cashDepositCommandHandler.handle(new CashDepositCommand());
 
-        return new PostCashDepositResponseDto(new BigDecimal(1_000_000));
+        return new PostCashDepositResponseDto(new BigDecimal(2_000_000));
     }
 }

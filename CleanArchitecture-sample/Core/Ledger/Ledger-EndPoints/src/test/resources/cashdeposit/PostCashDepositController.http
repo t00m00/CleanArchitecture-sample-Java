@@ -1,0 +1,13 @@
+@host=http://localhost:8081
+@version=v1
+@description=CashDeposit-Endpoints
+@baseurl={{host}}/v1
+
+###
+# @name deposit
+POST {{baseurl}}/ledger-deposit
+Content-Type: application/json
+
+{
+  "amount": "20"
+}

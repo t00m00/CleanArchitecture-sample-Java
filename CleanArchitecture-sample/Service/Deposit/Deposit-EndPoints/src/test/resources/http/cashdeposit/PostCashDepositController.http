@@ -1,6 +1,6 @@
 @host=http://localhost:8080
 @version=v1
-@description=Deposit-Endpoints
+@description=CashDeposit-Endpoints
 @baseurl={{host}}/v1
 
 ###

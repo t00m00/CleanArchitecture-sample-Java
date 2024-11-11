@@ -1,9 +1,9 @@
-package com.sample.deposit.depositendpoints.deposit;
+package com.sample.deposit.depositendpoints.cashdeposit;
 
 import com.sample.deposit.depositapplication.cashdeposit.commands.CashDepositCommand;
 import com.sample.deposit.depositapplication.cashdeposit.interfaces.CashDepositCommandHandler;
-import com.sample.deposit.depositendpoints.deposit.dtos.PostCashDepositResponseDto;
-import com.sample.deposit.depositendpoints.deposit.dtos.PostCashDepositRequestDto;
+import com.sample.deposit.depositendpoints.cashdeposit.dtos.PostCashDepositResponseDto;
+import com.sample.deposit.depositendpoints.cashdeposit.dtos.PostCashDepositRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
