@@ -1,7 +1,7 @@
-package com.sample.deposit.depositapplication.cashDeposit.interfaces;
+package com.sample.deposit.depositapplication.cashdeposit.interfaces;
 
-import com.sample.deposit.depositapplication.cashDeposit.commands.CashDepositCommand;
-import com.sample.deposit.depositapplication.cashDeposit.dtos.CashDepositResponseDto;
+import com.sample.deposit.depositapplication.cashdeposit.commands.CashDepositCommand;
+import com.sample.deposit.depositapplication.cashdeposit.dtos.CashDepositResponseDto;
 import com.sample.shared.sharedcontract.interfaces.RequestHandler;
 import jakarta.validation.Valid;
 

@@ -1,4 +1,4 @@
-package com.sample.deposit.depositapplication.cashDeposit.commands;
+package com.sample.deposit.depositapplication.cashdeposit.commands;
 
 import com.sample.shared.sharedcontract.interfaces.Request;
 

@@ -1,7 +1,7 @@
 package com.sample.deposit.depositendpoints.deposit;
 
-import com.sample.deposit.depositapplication.cashDeposit.commands.CashDepositCommand;
-import com.sample.deposit.depositapplication.cashDeposit.interfaces.CashDepositCommandHandler;
+import com.sample.deposit.depositapplication.cashdeposit.commands.CashDepositCommand;
+import com.sample.deposit.depositapplication.cashdeposit.interfaces.CashDepositCommandHandler;
 import com.sample.deposit.depositendpoints.deposit.dtos.PostCashDepositResponseDto;
 import com.sample.deposit.depositendpoints.deposit.dtos.PostCashDepositRequestDto;
 import lombok.RequiredArgsConstructor;
