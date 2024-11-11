@@ -13,4 +13,13 @@ findProject(':Service:Deposit:Deposit-Infrastructure')?.name = 'Deposit-Infrastr
 include 'Service:Deposit:Deposit-EndPoints'
 findProject(':Service:Deposit:Deposit-EndPoints')?.name = 'Deposit-EndPoints'
 
+// Ledger Service
+include 'Ledger-Application'
+findProject(':Core:Ledger:Ledger-Application')?.name = 'Ledger-Application'
+include 'Core:Ledger:Ledger-Domain'
+findProject(':Core:Ledger:Ledger-Domain')?.name = 'Ledger-Domain'
+include 'Core:Ledger:Ledger-EndPoints'
+findProject(':Core:Ledger:Ledger-EndPoints')?.name = 'Ledger-EndPoints'
+include 'Core:Ledger:Ledger-Infrastructure'
+findProject(':Core:Ledger:Ledger-Infrastructure')?.name = 'Ledger-Infrastructure'
 
