@@ -1,10 +1,16 @@
 rootProject.name = 'CleanArchitecture-sample'
+// Shared
 include 'Shared:Shared-Contracts'
 findProject(':Shared:Shared-Contracts')?.name = 'Shared-Contracts'
+
+// Deposit Service
+include 'Service:Deposit:Deposit-Domain'
+findProject(':Service:Deposit:Deposit-Domain')?.name = 'Deposit-Domain'
 include 'Service:Deposit:Deposit-Application'
 findProject(':Service:Deposit:Deposit-Application')?.name = 'Deposit-Application'
 include 'Service:Deposit:Deposit-Infrastructure'
 findProject(':Service:Deposit:Deposit-Infrastructure')?.name = 'Deposit-Infrastructure'
 include 'Service:Deposit:Deposit-EndPoints'
 findProject(':Service:Deposit:Deposit-EndPoints')?.name = 'Deposit-EndPoints'
+
 
