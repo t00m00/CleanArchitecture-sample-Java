@@ -12,6 +12,10 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation project(':Shared:Shared-Contracts')
+    implementation project(':Core:Ledger:Ledger-Application')
+    implementation project(':Core:Ledger:Ledger-Infrastructure')
 }
 
 test {

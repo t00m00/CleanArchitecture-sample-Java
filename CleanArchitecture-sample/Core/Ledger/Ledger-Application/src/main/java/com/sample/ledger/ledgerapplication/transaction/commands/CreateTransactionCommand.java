@@ -1,4 +1,6 @@
 package com.sample.ledger.ledgerapplication.transaction.commands;
 
-public record CreateTransactionCommand() {
+import com.sample.shared.sharedcontract.interfaces.RequestStream;
+
+public record CreateTransactionCommand() implements RequestStream {
 }
