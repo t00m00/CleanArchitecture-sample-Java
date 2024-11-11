@@ -1,6 +1,6 @@
 package com.sample.deposit.depositendpoints.deposit.dtos;
 
-public record PostDepositRequestDto(
+public record PostCashDepositRequestDto(
         String amount
 ) {
 }
