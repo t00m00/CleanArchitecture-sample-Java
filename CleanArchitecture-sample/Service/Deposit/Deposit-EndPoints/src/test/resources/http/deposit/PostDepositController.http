@@ -5,7 +5,7 @@
 
 ###
 # @name deposit
-POST {{baseurl}}/deposit
+POST {{baseurl}}/cash-deposit
 Content-Type: application/json
 
 {

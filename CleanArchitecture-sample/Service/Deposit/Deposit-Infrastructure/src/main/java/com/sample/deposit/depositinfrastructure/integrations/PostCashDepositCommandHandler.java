@@ -17,7 +17,7 @@ public class PostCashDepositCommandHandler implements CashDepositCommandHandler 
 
     @Override
     public Optional<CashDepositResponseDto> handle(CashDepositCommand command) {
-        log.info("😬😬😬Handling deposit command");
+        log.info("✅✅Handling cash deposit command");
 
         // Use Case
         // T.B.D

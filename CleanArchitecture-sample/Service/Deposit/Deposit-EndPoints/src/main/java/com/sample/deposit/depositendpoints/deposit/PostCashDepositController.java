@@ -17,14 +17,14 @@ import java.math.BigDecimal;
 
 @RestController
 @RequiredArgsConstructor(onConstructor_ = @Autowired)
-@RequestMapping("/v1/deposit")
+@RequestMapping("/v1/cash-deposit")
 public class PostCashDepositController {
     private static final Logger log = LoggerFactory.getLogger(PostCashDepositController.class);
     private final CashDepositCommandHandler cashDepositCommandHandler;
 
     @PostMapping
     public PostCashDepositResponseDto deposit(@RequestBody PostCashDepositRequestDto request) {
-        log.info("✅✅✅Deposit successful. {}", request);
+        log.info("✅Successful. Cash deposit end point. {}", request);
 
         var result = cashDepositCommandHandler.handle(new CashDepositCommand());
 
