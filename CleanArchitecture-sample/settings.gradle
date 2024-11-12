@@ -23,4 +23,7 @@ findProject(':Core:Ledger:Ledger-EndPoints')?.name = 'Ledger-EndPoints'
 include 'Core:Ledger:Ledger-Infrastructure'
 findProject(':Core:Ledger:Ledger-Infrastructure')?.name = 'Ledger-Infrastructure'
 
+// Providers
+include 'Providers:LedgerServiceClient'
+findProject(':Providers:LedgerServiceClient')?.name = 'LedgerServiceClient'
 
