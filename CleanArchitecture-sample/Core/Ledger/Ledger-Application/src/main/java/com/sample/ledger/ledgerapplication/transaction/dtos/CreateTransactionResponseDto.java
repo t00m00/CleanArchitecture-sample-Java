@@ -1,4 +1,8 @@
 package com.sample.ledger.ledgerapplication.transaction.dtos;
 
-public record CreateTransactionResponseDto() {
+import java.util.UUID;
+
+public record CreateTransactionResponseDto(
+        UUID resultTransactionId
+) {
 }

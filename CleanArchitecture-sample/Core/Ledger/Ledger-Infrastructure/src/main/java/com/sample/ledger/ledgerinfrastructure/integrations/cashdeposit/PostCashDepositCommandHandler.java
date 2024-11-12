@@ -1,4 +1,4 @@
-package com.sample.ledger.ledgerinfrastructure.integrations;
+package com.sample.ledger.ledgerinfrastructure.integrations.cashdeposit;
 
 
 import com.sample.ledger.ledgerapplication.cashdeposit.commands.CashDepositCommand;

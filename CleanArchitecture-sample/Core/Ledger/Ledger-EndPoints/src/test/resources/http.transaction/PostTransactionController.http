@@ -1,0 +1,13 @@
+@host=http://localhost:8081
+@version=v1
+@description=Ledger-Endpoints-Transaction
+@baseurl={{host}}/v1
+
+###
+# @name deposit
+POST {{baseurl}}/ledger-transaction
+Content-Type: application/json
+
+{
+  "transactionId": "123e4567-e89b-12d3-a456-426614174000"
+}

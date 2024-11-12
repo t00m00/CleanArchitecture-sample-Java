@@ -1,6 +1,6 @@
 @host=http://localhost:8081
 @version=v1
-@description=CashDeposit-Endpoints
+@description=Ledger-Endpoints-CashDeposit
 @baseurl={{host}}/v1
 
 ###
