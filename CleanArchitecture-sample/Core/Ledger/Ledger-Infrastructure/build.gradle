@@ -12,6 +12,13 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+    implementation 'org.springframework:spring-context:6.1.14'
+    implementation 'org.slf4j:slf4j-api:2.0.16'
+
+    implementation project(':Shared:Shared-Contracts')
+    implementation project(':Core:Ledger:Ledger-Application')
 }
 
 test {

@@ -3,7 +3,7 @@
 * Anticorruptionレイヤーを表現
 * Application ⇔ Providers
 * Infrastructure ⇔ Providers
-    * 基本的にApplicationでEnumを定義し使用するの、Infrastructureに閉じた列挙体を定義することは無い想定
+    * 基本的にApplicationでEnumを定義し使用する。Infrastructureに閉じた列挙体を定義することは無い想定
 
 ## 配置対象
 
